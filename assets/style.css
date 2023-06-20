@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: darkgreen;
+    display: inline;
+}
+
+header {
+    /* need to change background color to something better */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
+    color: lemonchiffon;
+}
+
+header h1 {
+    font-size: 50px;
+    display: inline-block;
+    padding: 14px;
+}
+
+header nav {
+    overflow: hidden;
+    float: right;
+}
+
+header nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 20px;
+    margin-top: 16px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+header nav a:hover {
+    background-color: chartreuse;
+    color: black;
+}
