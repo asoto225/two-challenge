@@ -41,3 +41,79 @@ header nav a:hover {
     background-color: chartreuse;
     color: black;
 }
+/*need to figure out how to fit imagine in container*/
+#hero {
+    background-image: url("././images/line\ pattern.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-color: black;
+    padding: 4%;
+}
+
+main, section, footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2::after {
+    content: "|";
+    color: black;
+    margin-left: 10px; 
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+    padding-right: 25%;
+    text-align: start;
+}
+
+button {
+    width: 250px;
+    margin: 0 .5%;
+    font-size: 20px;
+    color: #13293d;
+    background-color: #fff;
+    border: 3px solid #13293d;
+    display: block;
+}
+
+#one {
+    width: 300px;
+    height: 200px;
+    font-size: 200%;
+}
+
+button:hover {
+    background-color: yellow;
+    color:blue;
+}
+
+button:active {
+    font-size: 20px;
+    box-shadow: 10px #000 inset;
+}
+
+button:focus {
+    outline: none;
+    border-color: fuchsia;
+}
+
+/* need to space these things out, add some color, and other things */
+ul li {
+    display: list-item;
+    list-style-type: disc;
+    padding-bottom: 10px;
+}
