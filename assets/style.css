@@ -5,15 +5,16 @@
 }
 
 body {
-    background-color: darkgreen;
+    background-color:#1A1A1D;
     display: inline;
+    color: #f2f2f2;
 }
 
 header {
     /* need to change background color to something better */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: red;
-    color: lemonchiffon;
+    background-color: #1A1A1D;
+    color: #f2f2f2;
 }
 
 header h1 {
@@ -38,7 +39,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: chartreuse;
+    background-color: cadetblue;
     color: black;
 }
 /*need to figure out how to fit imagine in container*/
@@ -53,11 +54,26 @@ header nav a:hover {
     padding: 4%;
 }
 
-main, section, footer {
-    display: flex;
+main {
+    /* display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-me {
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex;
+}
+
+section > h2 {
+    min-width: 250px;
+    text-align: end;
 }
 
 h2 {
@@ -69,7 +85,6 @@ h2 {
 
 h2::after {
     content: "|";
-    color: black;
     margin-left: 10px; 
     position: relative;
 }
@@ -80,7 +95,7 @@ p {
     text-align: start;
 }
 
-button {
+/* button {
     width: 250px;
     margin: 0 .5%;
     font-size: 20px;
@@ -88,15 +103,41 @@ button {
     background-color: #fff;
     border: 3px solid #13293d;
     display: block;
-}
+} */
 
 #one {
     width: 300px;
-    height: 200px;
-    font-size: 200%;
+    font-size: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    text-align: center;
+    border: black solid;
+    transition: 0.3s;
+    margin: 25px;
+    background-color: maroon;
+    border-radius: 5px;
 }
 
-button:hover {
+#one:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+    background-color: cadetblue;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    text-align: center;
+    border: black solid;
+    margin: 30px;
+    width: 220px;
+    background-color: maroon;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color:cadetblue;
+}
+
+/* button:hover {
     background-color: yellow;
     color:blue;
 }
@@ -109,11 +150,17 @@ button:active {
 button:focus {
     outline: none;
     border-color: fuchsia;
-}
+} */
 
-/* need to space these things out, add some color, and other things */
+/* need to space these things out, add some color */
 ul li {
     display: list-item;
     list-style-type: disc;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 100%;
+    }
 }

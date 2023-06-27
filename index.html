@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Self Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css"/>
+    <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <header>
         <h1>Abel Soto</h1>
         <nav>
-            <a href="#About Me ">About Me</a>
+            <a href="#About Me">About Me</a>
             <a href="#Work">Work</a>
             <a href="#Contact Me">Contact Me</a>
         </nav>
     </header>
     <figure id="hero"></figure>
     <main>
-        <h2>About Me</h2>
+        <section class="about-me">
+            <h2 id="About Me">About Me</h2>
             <p>
-            My name is Abel soto. I am 28 years old and I live in Tucson, Arizona. I am a current Arizona State University Bootcamp student. 
+                My name is Abel soto. I am 28 years old and I live in Tucson, Arizona. I am a current Arizona State
+                University Bootcamp student. In my free time, I like to weight lift, play video games, and watch sports. My goal is to
+                become a proficent web developer to be useful to any team that I have the opportunity of joining. 
             </p>
-    </main>
-    <section>
-        <h2>Work</h2>
-            <ul>
-                <button id="one">First Project</button>
-                <button>Second Project</button>
-                <button>Third Project</button>
+        </section>
+        <section>
+            <h2 id="Work">Work</h2>
+            <ul class="projects">
+                <article id="one">
+                    <p>First Project</p>
+                    <img src="./assets/images/200.jpeg" alt="200x200 place">
+                </article>
+                <article class="card">
+                    <p>Second Project</p>
+                    <img src="./assets/images/150.png" alt="150x150 placeholder">
+                </article>
+                <article class="card">
+                    <p>Third Project</p>
+                    <img src="./assets/images/150.png" alt="">
+                </article>
             </ul>
-    </section>
-    
+        </section>
+        <section class="contact">
+            <h2 id="Contact Me">Contact Me</h2>
+            <ul>
+                <li><strong>Email:</strong> Abelsoto12@hotmail.com</li>
+                <li><strong>Phone:</strong> (520)668-5896</li>
+                <li><strong>LinkedIn:</strong> "Coming Soon"</li>
+            </ul>
+        </section>
+    </main>
 </body>
-<footer>
-    <h2>Contact Me</h2>
-    <ul>
-        <li><strong>Email:</strong> Abelsoto12@hotmail.com</li>
-        <li><strong>Phone:</strong> (520)668-5896</li>
-        <li><strong>LinkedIn:</strong> "Coming Soon"</li>
-    </ul>
-</footer>
 </html>
